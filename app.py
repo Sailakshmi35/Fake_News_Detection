@@ -21,9 +21,6 @@ def testing(news):
     vector_form1=vector_form.transform(input_data)
     prediction = load_model.predict(vector_form1)
     return prediction[0]
-  
-
-
 if __name__ == '__main__':
     st.title('Fake News Classification app ')
     st.subheader("Input the News content below")
